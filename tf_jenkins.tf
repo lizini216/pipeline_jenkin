@@ -86,7 +86,7 @@ resource "aws_security_group" "AppServer-SG" {
 
 # Creating EC2 Instance to run Tomcat Server
 
-resource "aws_instance" "Tomcat_AppServer" {
+/*resource "aws_instance" "Tomcat_AppServer" {
     ami = "ami-07d0cf3af28718ef8"   
     instance_type = "${var.instance_type}"
     subnet_id = "${aws_subnet.AppServer_subnet.id}"
@@ -97,6 +97,6 @@ resource "aws_instance" "Tomcat_AppServer" {
         Name = "Tomcat_AppServer"
         Env = "DEV"
     }
-}
+}*/
 
 
